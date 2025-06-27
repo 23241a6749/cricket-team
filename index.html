@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blazing Sixers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Team Header -->
+  <header>
+    <img src="images/logo.png" alt="Team Logo">
+    <h1>Blazing Sixers</h1>
+    <p class="slogan">"Striking Hard, Soaring High!"</p>
+  </header>
+
+  <!-- Player Grid -->
+  <main>
+    <section class="players-grid">
+      <div class="player-card" onclick="openModal(0)">
+        <img src="images/kohli.jpg" alt="Virat Kohli">
+        <h3>Virat Kohli</h3>
+        <p>Batsman</p>
+      </div>
+
+      <div class="player-card" onclick="openModal(1)">
+        <img src="images/dhoni.jpg" alt="MS Dhoni">
+        <h3>MS Dhoni</h3>
+        <p>Wicket Keeper</p>
+      </div>
+
+      <div class="player-card" onclick="openModal(2)">
+        <img src="images/bumrah.jpg" alt="Jasprit Bumrah">
+        <h3>Jasprit Bumrah</h3>
+        <p>Bowler</p>
+      </div>
+    </section>
+  </main>
+  <!-- Modal for player stats -->
+<div id="playerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalName">Player Name</h2>
+    <p><strong>Jersey Number:</strong> <span id="modalJersey"></span></p>
+    <p><strong>Matches Played:</strong> <span id="modalMatches"></span></p>
+    <p><strong>Strike Rate:</strong> <span id="modalStrikeRate"></span></p>
+    <p><strong>Best Performance:</strong> <span id="modalBest"></span></p>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
